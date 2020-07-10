@@ -12,11 +12,16 @@ app.get('/', (req, res) => {
 })
 
 app.post('/webhook', (req, res) => {
+
   console.log(req.body)
+  console.log(req.headers);
 
   if (req.headers.authorization === process.env.verification_token) {
     res.status(200)
     res.send()
+
+    // call the Zoom API endpoints utalizing any data in req.body
+
   } else {
     res.send('Unauthorized request to Webhook.')
   }
