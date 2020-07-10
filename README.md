@@ -10,6 +10,18 @@
 
 1. In your JWT App settings in the [Zoom App Marketplace](https://marketplace.zoom.us/), click on the "Features" page. Turn event subscriptions on and add a new event subscription. Name it Meeting Webhook and add `https://zoom.us` as the "Event notification endpoint URL". Click "Add events" and click "Meeting" > "End Meeting". Note the "Verification Token" generated above.
 
+1. Clone the repo:
+
+   `$ git clone https://github.com/tommygaessler/webhook.git`
+
+1. Navigate to the cloned directory:
+
+   `$ cd webhook`
+
+1. Install the dependencies:
+
+   `$ npm install`
+
 1. Create your `.env` file for your webhook verification token.
 
    `$ touch .env`
